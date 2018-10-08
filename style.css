@@ -1,0 +1,94 @@
+*{
+  box-sizing: border-box;
+}
+.deck {
+  list-style: none;
+  /* background-color: purple; */
+  background: linear-gradient(160deg, blue, rgb(255, 0, 0));
+  width: 450px;
+  height: 450px;
+  border-radius: 20px;
+  margin: 0 auto;
+  padding: 5px;
+  box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.877);
+}
+
+.card{
+  width: 100px;
+  height: 100px;
+  background-color: rgb(169, 240, 245);
+  margin: 5px;
+  text-align: center;
+  font-size: 0em;
+  float: left;
+  border-radius: 10px;
+  cursor: pointer;
+  padding-top: 1em;
+}
+
+.flip {
+  cursor: default;
+  background-color: blueviolet;
+  font-size: 2em;
+  transform: rotateY(0);
+}
+
+
+.match{
+  background-color: rgb(11, 128, 0);
+  font-size: 2em;
+  cursor: default;
+}
+
+
+
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?qdgn24');
+  src:  url('fonts/icomoon.eot?qdgn24#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?qdgn24') format('truetype'),
+    url('fonts/icomoon.woff?qdgn24') format('woff'),
+    url('fonts/icomoon.svg?qdgn24#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-home3:before {
+  content: "\e902";
+}
+.icon-spades:before {
+  content: "\e917";
+}
+.icon-clubs:before {
+  content: "\e918";
+}
+.icon-diamonds:before {
+  content: "\e919";
+}
+.icon-coin-dollar:before {
+  content: "\e93b";
+}
+.icon-lifebuoy:before {
+  content: "\e941";
+}
+.icon-hour-glass:before {
+  content: "\e979";
+}
+.icon-power:before {
+  content: "\e9b5";
+}
